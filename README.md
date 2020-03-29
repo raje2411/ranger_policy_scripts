@@ -10,21 +10,16 @@ cd ranger_policy_scripts
 
 #### python python_script_to_dump_ranger_policies.py
 
+```
 Ranger host name(default localhost): c349-node4
-
 Ranger port(default : 6080):
-
 Ranger SSL enabled ? (True or False): False
-
 Ranger admin username (default : admin): admin
-
-Ranger admin password (default : admin): admin
-
-Enter the exact Ranger service name to be exported(as shown in Ranger URI) :c349_hive
-
+Ranger admin password :
+Enter the exact Ranger service name to be exported(as shown in Ranger URI) :c349_hie
 Do you want a full policy dump in a single file (y or n)? : y
-
 Policies are now getting exported to policy_dumps directory....It should take a while depending on the number of policies
+```
 
 ### To verify:-
 ```
