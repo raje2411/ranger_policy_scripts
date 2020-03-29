@@ -1,4 +1,4 @@
-# ranger_policy_scripts
+# Script to Take Export Policy / Dump
 
 This script will take the whole ranger hive policy dump and also export the each policy into a seaparate file.  Which you can move to another cluster and import it.
 
