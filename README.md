@@ -1,14 +1,6 @@
-```json
-   // code for coloring
-```
-```html
-   // code for coloring
-```
-```js
-   // code for coloring
-```
+
 ```css
-   // code for coloring
+  Script to Take Export Policy / Dump
 ```
 
 
