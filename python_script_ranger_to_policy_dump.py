@@ -1,8 +1,9 @@
 #Python Libraries used in this program
-
+import os
 import requests
 import json
 from requests.auth import HTTPBasicAuth
+
 
 #Example:- ranger_admin_url ="http://c349-node4:6080/service/public/v2/api/service/c349_hive/policy?pageSize=250000"
 
@@ -26,15 +27,18 @@ need_full_dump = str(raw_input("Do you want a full policy dump in a single file 
 ranger_policy_pull = requests.get(ranger_admin_url,auth=HTTPBasicAuth(ranger_adm_username,ranger_adm_passwd))
 
 # Full policy dump
-if need_full_dump == "y" or "Y":
-  with open("%s_policy_dump.json" %ranger_service_name,"w") as write_file:
+if (need_full_dump == "y" or need_full_dump == "Y"):
+  with open("%s_policy_full_dump.json" %ranger_service_name,"w") as write_file:
     json.dump(ranger_policy_pull.json(),write_file, indent=4)
 
-# Exporting each policies in to a single file with the same name as policy
+# Exporting each policies in to a single file.  File name will be same name as policy name.
  
 policy_dump = ranger_policy_pull.json()
 
+print("Policies are now getting exported to policy_dumps directory....It should take a while depending on the number of policies")  
+os.mkdir("policy_dumps")
+
 for policy_item in policy_dump:
-     policy_name = str(policy_item["name"])
+     policy_name = "policy_dumps/"+str(policy_item["name"])
      with open('%s.json' %policy_name,"w") as write_file:
        json.dump(policy_item,write_file, indent=4)
