@@ -16,7 +16,7 @@ Ranger port(default : 6080):
 Ranger SSL enabled ? (True or False): False
 Ranger admin username (default : admin): admin
 Ranger admin password :
-Enter the exact Ranger service name to be exported(as shown in Ranger URI) :c349_hie
+Enter the exact Ranger service name to be exported(as shown in Ranger URI) :c349_hive
 Do you want a full policy dump in a single file (y or n)? : y
 Policies are now getting exported to policy_dumps directory....It should take a while depending on the number of policies
 ```
