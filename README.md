@@ -26,3 +26,11 @@ Do you want a full policy dump in a single file (y or n)? : n
 
 Policies are now getting exported to policy_dumps directory....It should take a while depending on the number of policies
 
+### To verify:-
+{noformat}
+ls -lrt
+total 16
+-rw-r--r--      1 rraman  staff     341 Mar 29 00:19 README.md
+-rw-r--r--      1 rraman  staff    2024 Mar 29 00:19 python_script_ranger_to_policy_dump.py
+drwxr-xr-x  22649 rraman  staff  724768 Mar 29 00:22 policy_dumps
+{noformat}
