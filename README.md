@@ -33,3 +33,5 @@ ls -lrt
 -rw-r--r--      1 rraman  staff    2024 Mar 29 00:19 python_script_ranger_to_policy_dump.py
 drwxr-xr-x  22649 rraman  staff  724768 Mar 29 00:22 policy_dumps
 ```
+
+Policy_dumps directory will have individual files for each policy
