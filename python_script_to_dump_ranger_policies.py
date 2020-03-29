@@ -2,6 +2,7 @@
 import os
 import requests
 import json
+import getpass 
 from requests.auth import HTTPBasicAuth
 
 
@@ -17,7 +18,8 @@ if ssl_enabled == True:
 else:
   protocol="http"
 ranger_adm_username = str(raw_input("Ranger admin username (default : admin): ") or "admin")
-ranger_adm_passwd = str(raw_input("Ranger admin password (default : admin): ") or "admin")
+#ranger_adm_passwd = str(raw_input("Ranger admin password (default : admin): ") or "admin")
+ranger_adm_passwd = getpass.getpass(prompt='Ranger admin password : ')
 ranger_service_name = str(raw_input("Enter the exact Ranger service name to be exported(as shown in Ranger URI) :"))
 ranger_admin_url = protocol + "://"+ ranger_host + ":" + ranger_port + "/service/public/v2/api/service/" + ranger_service_name + "/policy?pageSize=250000"
 need_full_dump = str(raw_input("Do you want a full policy dump in a single file (y or n)? : ") or "n")
