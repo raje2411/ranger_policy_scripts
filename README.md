@@ -3,9 +3,7 @@
 ##### This script will take export / policy dump of given ranger service(like hive, hdfs, kafka, hbase, yarn etc.) and also export the each policy into a seaparate file.  Which you can move to another cluster and import it.
 
 ## How to use:
-`#hexhex
-git clone https://github.com/raje2411/ranger_policy_scripts.git
-`
+`#hexhex` git clone https://github.com/raje2411/ranger_policy_scripts.git
 
 cd ranger_policy_scripts
 
