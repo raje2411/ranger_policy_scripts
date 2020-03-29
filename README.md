@@ -8,7 +8,7 @@ git clone https://github.com/raje2411/ranger_policy_scripts.git
 
 cd ranger_policy_scripts
 
-### python python_script_ranger_to_policy_dump.py
+### python python_script_to_dump_ranger_policies.py
 
 Ranger host name(default localhost): c349-node4
 
