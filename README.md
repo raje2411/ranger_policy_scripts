@@ -23,8 +23,13 @@ Policies are now getting exported to policy_dumps directory....It should take a 
 
 ### To verify:-
 ```
-du -sh *
-4.0K	README.md
+# ls -lrt
+total 196744
+-rw-r--r--      1 rraman  staff      2113 Mar 29 00:49 python_script_to_dump_ranger_policies.py
+-rw-r--r--      1 rraman  staff  90550962 Mar 29 00:54 c349_hive_policy_full_dump.json
+drwxr-xr-x  22649 rraman  staff    724768 Mar 29 00:54 policy_dumps
+
+# du -sh *
  96M	c349_hive_policy_full_dump.json
 111M	policy_dumps
 4.0K	python_script_to_dump_ranger_policies.py
