@@ -1,7 +1,6 @@
 
-```css
-Script to Take Export Policy / Dump
-```
+## Script to Take Export Policy / Dump
+
 
 
 ##### This script will take export / policy dump of given ranger service(like hive, hdfs, kafka, hbase, yarn etc.) and also export the each policy into a seaparate file.  Which you can move to another cluster and import it.
