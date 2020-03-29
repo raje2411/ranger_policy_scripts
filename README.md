@@ -22,16 +22,17 @@ Ranger admin password (default : admin): admin
 
 Enter the exact Ranger service name to be exported(as shown in Ranger URI) :c349_hive
 
-Do you want a full policy dump in a single file (y or n)? : n
+Do you want a full policy dump in a single file (y or n)? : y
 
 Policies are now getting exported to policy_dumps directory....It should take a while depending on the number of policies
 
 ### To verify:-
 ```
-ls -lrt
--rw-r--r--      1 rraman  staff     341 Mar 29 00:19 README.md
--rw-r--r--      1 rraman  staff    2024 Mar 29 00:19 python_script_ranger_to_policy_dump.py
-drwxr-xr-x  22649 rraman  staff  724768 Mar 29 00:22 policy_dumps
+du -sh *
+4.0K	README.md
+ 96M	c349_hive_policy_full_dump.json
+111M	policy_dumps
+4.0K	python_script_to_dump_ranger_policies.py
 ```
 
 Policy_dumps directory will have individual files for each policy
